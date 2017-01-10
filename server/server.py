@@ -13,7 +13,7 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
         return True
 
     def open(self):
-        print("a cleint joined")
+        print("a client joined")
         tanks.append(Tank(
             self, (0, 0, 0), (0, 0, 0)
         ))
